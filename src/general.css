@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /*Primary*/
+    --orange: hsl(25, 97%, 53%);
+    /*Gradients*/
+    --charleston-green: hsl(215, 20%, 17%);
+    --dark-jungle-green: hsl(216, 24%, 12%);
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: #262E38;
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    background-color: var(--very-dark-blue);
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    max-width: 41.2rem;
+    padding-left: 3.2rem;
+    padding-right: 4rem;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, var(--charleston-green) 0%, var(--dark-jungle-green) 100%);
+    border-radius: 3rem;
+}
+
+
+/* Text Box */
+
+.heading {
+
+    /* Font */
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    color: var(--white);
+
+    /* Layout */
+    margin-bottom: 0.7rem;
+}
+
+.paragraph {
+    /* Font */
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--light-grey);
+}
+
+.btn {
+
+    /* Layout */
+    padding-block: 1.3rem;
+    border: transparent;
+    border-radius: 22.5px;
+    cursor: pointer;
+
+    /* Color */
+    background-color: var(--orange);
+    color: var(--white);
+
+    /* Font */
+    font: inherit;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* MEDIA QURIES */
+
+/*****************************/
+/* BELOW 464px (Mobile) */
+/*****************************/
+
+@media (max-width: 29em) {
+    .card {
+        max-width: 32.7rem;
+        padding-inline: 2.4rem;
+        border-radius: 1.5rem;
+    }
+
+    /* Text Box */
+
+    .heading {
+
+        /* Font */
+        font-size: 2.4rem;
+        line-height: 3rem;
+
+        /* Layout */
+        margin-bottom: 1rem;
+    }
+
+    .paragraph {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}

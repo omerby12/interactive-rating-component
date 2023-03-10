@@ -1,0 +1,107 @@
+.card--form {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.circle-star-container {
+    margin-bottom: 3rem;
+}
+
+.circle-star {
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    padding: 1.6rem;
+}
+
+.rating-selection-box {
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    gap: 2.2rem;
+
+    margin-bottom: 3.2rem;
+
+    /* Font */
+
+
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Medium Gray */
+
+    color: var(--medium-grey);
+}
+
+.circle {
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    width: 5.1rem;
+    height: 5.1rem;
+    cursor: pointer;
+
+    /* Button Style - color,border */
+    border: transparent;
+
+    /* Font  */
+    font: inherit;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Medium Gray */
+    color: var(--medium-grey);
+
+}
+
+.circle:hover {
+    background: var(--orange);
+    color: var(--white)
+}
+
+.selected {
+    background: var(--medium-grey);
+    color: var(--white)
+}
+
+/*****************************/
+/* BELOW 464px (Mobile) */
+/*****************************/
+
+@media (max-width: 29em) {
+    .card--form {
+        padding-top: 2.4rem;
+    }
+
+    .circle-star-container {
+        margin-bottom: 1.6rem;
+    }
+
+    .circle-star {
+        background-color: var(--dark-blue);
+        border-radius: 50%;
+        padding: 1.2rem;
+    }
+
+    .rating-selection-box {
+        gap: 1.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .circle {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+}

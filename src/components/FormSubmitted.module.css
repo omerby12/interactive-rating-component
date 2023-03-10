@@ -1,0 +1,45 @@
+.card--form-submitted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 3.2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.card--form-submitted span {
+
+    padding: 0.4rem 2rem;
+    border-radius: 22.5px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+/*****************************/
+/* BELOW 464px (Mobile) */
+/*****************************/
+
+@media (max-width: 29em) {
+    .card--form-submitted {
+        padding-block: 3.5rem;
+        gap: 2.4rem
+    }
+
+    .card--form-submitted img {
+        width: 14.4rem;
+        height: 9.6rem;
+    }
+
+    .card--form-submitted span {
+        padding-inline: 1.2rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}
