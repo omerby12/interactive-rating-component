@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live](https://results-summary-component-roan.vercel.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-5lr_Cg7ETs)
+- Live Site URL: [Live](https://interactive-rating-component-kohl.vercel.app/)
 
 ## My process
 
